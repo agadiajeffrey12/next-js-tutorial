@@ -1,0 +1,26 @@
+.menu{
+    width:30rem;
+    height: 90vh;
+    padding-left: 1rem;
+    /* border:1px solid black; */
+}
+
+.menuDiv{
+    width:90%;
+    height: 5rem;
+    border-radius:10px;
+    background: #6666ff;
+    margin-top: 1rem;
+    transition:all 1s ease-in-out;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menuDiv:hover{
+    transform:translateX(10%);
+    /* background: #fff; */
+}

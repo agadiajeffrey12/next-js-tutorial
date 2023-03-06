@@ -1,0 +1,72 @@
+.quadContainer{
+    width:95%;
+    height:100%;
+    overflow-y: scroll;
+    /* display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    font-size: 2.5rem;
+    color: blue;
+    font-weight: 600;
+    /* border:1px solid black; */
+    padding-top:1rem;
+}
+
+.quadContainer::-webkit-scrollbar{
+    display:none;
+}
+
+.quadHeading{
+    font-size:2rem;
+}
+
+.quadIntroText{
+    margin-top:1rem;
+    font-size:1.5rem;
+    color:#111;
+    font-weight: 500;
+}
+
+.subHeading{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.inputContainer{
+    display:flex;
+    gap:1rem;
+    margin: 2rem 0;
+}
+
+.inputs{
+    width:10rem;
+    height: 4rem;
+    border:2px solid blue;
+    outline: none;
+    padding-left: 1rem;
+    border-radius: 10px;
+}
+
+.button{
+    width:10rem;
+    height:4rem;
+    border:none;
+    background-color: blue;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.explanatoryText{
+    font-size: 1.5rem;
+    color: #111;
+    font-weight: 500;
+}
+
+.solved{
+    width: 100%;
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: column;
+}
