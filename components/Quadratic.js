@@ -4,6 +4,7 @@ import styles from "../styles/Quad.module.css";
 import QuadSolver from "./QuadSolver";
 
 export default function Quadratic() {
+  const [display, setDisplay] = useState("none");
   const [a, setA] = useState();
   const [b, setB] = useState();
   const [c, setC] = useState();
@@ -15,9 +16,10 @@ export default function Quadratic() {
   const [fourthComplied, setFourthComplied] = useState();
   const [fifthComplied, setFifthComplied] = useState();
   const [sixthComplied, setSixthComplied] = useState();
+  // if (a && b && c == undefined) setDisplay("none");
   const run = (e) => {
     e.preventDefault();
-    console.log(formular);
+    if (a && b && c !== undefined) setDisplay("flex");
   };
   return (
     <div className={styles.quadContainer}>
@@ -79,7 +81,7 @@ export default function Quadratic() {
         Using the formular method, we substitute the values of a = {a},b={b} and
         c={c} into the quadratic formular
       </p>
-      <div className={styles.solved}>
+      <div className={styles.solved} style={{ display: `${display}` }}>
         {" "}
         {formular} <p>{firstComplied}</p>
         <p>{secondComplied}</p>
@@ -88,6 +90,7 @@ export default function Quadratic() {
         <p>{fourthComplied}</p>
         <p>{fifthComplied}</p>
         <p>{sixthComplied}</p>
+        <p>The answers gotten are approximated values</p>
       </div>
     </div>
   );
